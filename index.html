@@ -450,11 +450,12 @@
       
         
           
-            <h2 id="1、面层过程和面向对象编程"><a href="#1、面层过程和面向对象编程" class="headerlink" title="1、面层过程和面向对象编程"></a>1、面层过程和面向对象编程</h2><p>1.1 面向对象编程和面向过程编程都是一种编程思想 。</p>
-<p>1.2  面向过程编程和面向对象编程的主要区别：</p>
+            <h2 id="一、面向过程和面向对象编程"><a href="#一、面向过程和面向对象编程" class="headerlink" title="一、面向过程和面向对象编程"></a>一、面向过程和面向对象编程</h2><font size="3"> <strong>1.1 面向对象编程和面向过程编程都是一种编程思想。</strong> </font><br><br><br><font size="3"> <strong>1.2  面向过程编程和面向对象编程的主要区别：</strong> </font>
+
+
 <pre>
 
-面向过程编程:
+    面向过程编程:
         关注点在于解决问题需要的每一个详细的步骤
         示例:
             自己洗衣服的过程:
@@ -468,7 +469,7 @@
             <font size="4">⑧</font> 尽量把把洗好的衣服的水分拧干
             <font size="4">⑨</font> 晾晒
 
-面向对象编程:
+    面向对象编程:
         关注点在于解决问题需要的对象身上
         示例:
             使用洗衣机洗衣服的过程:
@@ -478,40 +479,130 @@
 
 </pre>
 
-<p>1.3 面向过程和面向对象他们的区别就类似于自己洗衣服和使用洗衣机洗衣服|自己做饭吃和去餐馆吃饭 。</p>
-<h2 id="2、面向对象编程的相关概念"><a href="#2、面向对象编程的相关概念" class="headerlink" title="2、面向对象编程的相关概念"></a>2、面向对象编程的相关概念</h2><p>2.1 对象： </p>
+
+<font size="3"> <strong>1.3 面向过程和面向对象他们的区别就类似于自己洗衣服和使用洗衣机洗衣服|自己做饭吃和去餐馆吃饭 。</strong> </font>
+
+
+<h2 id="二、面向对象编程的相关概念"><a href="#二、面向对象编程的相关概念" class="headerlink" title="二、面向对象编程的相关概念"></a>二、面向对象编程的相关概念</h2><font size="3"> <strong>2.1 对象：</strong> </font>
+
+
 <pre>
 什么是对象? 所有的一切都是对象,在开发中有一项重要的工作就是对象的划分
 一般来说,我们所指的对象是某个具体的事物,而非泛泛的类别 。
 </pre>
 
-<p>2.2 对象的特征(静态描述信息)</p>
+
+<font size="3"> <strong>2.2 对象的特征(静态描述信息)</strong> </font>
+
 <pre>
 所谓特征就是一些特定的描述信息
 如:学生(性别、年龄、班级、专业、籍贯、家庭住址)
 如:汽车(颜色、车牌、品牌、价格等)
 </pre>
 
-<p>2.3  对象的行为(动态特性)</p>
+<font size="3"> <strong> 2.3  对象的行为(动态特性)</strong> </font>
+
 <pre>
 如:人(吃饭、睡觉、玩游戏、奔跑、运动等)
 如:狗(吃、睡、咬人、叫、流口水)
 </pre>
 
-<p>2.4  js中的对象</p>
+<font size="3"><strong>2.4  js中的对象</strong></font>
+
+
 <pre>
 键-值对(key-value)的集合
 </pre>
 
-<p>2.5 现实生活中的对象和js对象的对应关系</p>
+<font size="3"> <strong>2.5 现实生活中的对象和js对象的对应关系</strong> </font>
+
 <pre>
 静态的描述信息 - js对象中的属性(属性就是定义在对象内部的变量)
 动态的行为特征 - js对象中的方法(方法就是定义在对象内部的函数)
 </pre>
 
+<font size="3"> <strong>2.6 代码示例：</strong> </font>
 
-<p>2.6 代码示例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">var zhangsan = &#123;</div><div class="line">        name:&quot;张三&quot;,</div><div class="line">        sex:&quot;男&quot;,</div><div class="line">        age:18,</div><div class="line">        address:&quot;广州&quot;,</div><div class="line"></div><div class="line">        eat:function () &#123;</div><div class="line">            console.log(&apos;能吃&apos;);</div><div class="line">        &#125;,</div><div class="line">        sleep:function () &#123;</div><div class="line">            console.log(&quot;能睡&quot;);</div><div class="line">        &#125;,</div><div class="line">        say:function () &#123;</div><div class="line">            console.log(&quot;能说话&quot;);</div><div class="line">        &#125;,</div><div class="line">        run:function () &#123;</div><div class="line">            console.log(&quot;能运动&quot;);</div><div class="line">        &#125;,</div><div class="line">        song:function () &#123;</div><div class="line">            console.log(&quot;能唱歌&quot;);</div><div class="line">        &#125;</div><div class="line">    &#125;;</div><div class="line"></div><div class="line">    //打印对象的属性并调用相关的方法</div><div class="line">    console.log(zhangsan.name,zhangsan.age,zhangsan.address);</div><div class="line">    zhangsan.say();</div><div class="line">    zhangsan.sleep();</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">var zhangsan = &#123;</div><div class="line">    name:&quot;张三&quot;,</div><div class="line">    sex:&quot;男&quot;,</div><div class="line">    age:18,</div><div class="line">    address:&quot;广州&quot;,</div><div class="line"></div><div class="line">    eat:function () &#123;</div><div class="line">        console.log(&apos;能吃&apos;);</div><div class="line">    &#125;,</div><div class="line">    sleep:function () &#123;</div><div class="line">        console.log(&quot;能睡&quot;);</div><div class="line">    &#125;,</div><div class="line">    say:function () &#123;</div><div class="line">        console.log(&quot;能说话&quot;);</div><div class="line">    &#125;,</div><div class="line">    run:function () &#123;</div><div class="line">        console.log(&quot;能运动&quot;);</div><div class="line">    &#125;,</div><div class="line">    song:function () &#123;</div><div class="line">        console.log(&quot;能唱歌&quot;);</div><div class="line">    &#125;</div><div class="line">  &#125;;</div><div class="line"></div><div class="line">   //打印对象的属性并调用相关的方法</div><div class="line">   console.log(zhangsan.name,zhangsan.age,zhangsan.address);</div><div class="line">   zhangsan.say();</div><div class="line">   zhangsan.sleep();</div></pre></td></tr></table></figure>
+<h2 id="三、面向对象的三大特性"><a href="#三、面向对象的三大特性" class="headerlink" title="三、面向对象的三大特性"></a>三、面向对象的三大特性</h2><p>面向对象的三大特性:封装、继承、多态</p>
+<font size="3"> <strong>3.1 封装:复用|信息隐蔽</strong> </font>
+
+
+<pre>
+代码示例：
+    //01 封装的简单说明
+    //001 观察以下杂乱无关的语句,它们仅仅只是一堆无意义的全局变量
+    var name = "乘风波浪";
+    var actors = ["彭于晏","赵丽颖","邓超","李荣浩"];
+    var showTime = "2017-1-28 - 2017-2-28";
+    var director = "韩寒";
+    var type = "喜剧";
+    var play = function () {
+        console.log("播放......");
+    };
+
+    //002 把上面的变量封装到对象中(更具体&有意义)
+    var film  = {
+        name:"乘风破浪",
+        actors:["彭于晏","赵丽颖","邓超","李荣浩"],
+        showTime:"2017-1-28 - 2017-2-28",
+        director:"韩寒",
+        type:"喜剧",
+        play:function () {
+            console.log("播放......");
+        }
+    }
+</pre>
+
+<font size="3"> <strong>3.2 继承: 获取已经存在的对象已有属性和方法的一种方式(获取他人已有财富和资源的一种方式)。</strong> </font>
+
+<pre>
+代码示例
+    //继承的简单示例
+    //001 创建一个空的对象
+    var nullObj = {};
+
+    // 上面的对象film拥有了很多的属性和方法
+    //002 设法让nullObj拥有film中所有的属性和方法
+    //方法一:自己重新写一遍
+    //方法二:通过某种方式来获得,比如遍历该对象,然后完成赋值
+    for(var k in film)
+    {
+        nullObj[k] = film[k];
+    }
+
+    for(var k in nullObj)
+    {
+        console.log(nullObj[k]);
+    }
+</pre>
+
+<font size="3"> <strong>3.3 多态(polymorphism):</strong> </font>
+
+<pre>
+    多态:polymorphism = poly(复数) + morph(形态) + ism
+    多用于强类型语言中,JavaScript具备与生俱来的多态特性。
+    多态表现为:
+        <font size="4">①</font> 同一操作,作用于不同的对象,会产生不同的解释和行为。
+        <font size="4">②</font> 隐藏不同。
+
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
           
         
